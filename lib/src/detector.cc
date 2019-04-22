@@ -1,5 +1,9 @@
 #include "mtcnn/detector.h"
 
+// OpenCV 4.1 update
+#define CV_BGR2RGB cv::COLOR_BGR2RGB
+#define CV_BGRA2RGB cv::COLOR_BGR2RGB
+
 MTCNNDetector::MTCNNDetector(const ProposalNetwork::Config &pConfig,
                              const RefineNetwork::Config &rConfig,
                              const OutputNetwork::Config &oConfig) {
